@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #2ecc71;
-    --secondary-color: #27ae60;
-    --dark-color: #2c3e50;
+    --primary-color: #2e6bcc;
+    --secondary-color: #cf7ae0;
+    --dark-color: #021528;
     --light-color: #ecf0f1;
 }
 
@@ -15,6 +15,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     background-color: var(--light-color);
+    
+        background-image: url('Untitled\ design.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+
+    
 }
 
 header {
@@ -42,12 +49,7 @@ header {
     gap: 1rem;
 }
 
-.profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid var(--primary-color);
-}
+
 
 nav ul {
     display: flex;
@@ -215,5 +217,84 @@ footer {
 
     .contact-container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Updated Header Styles */
+header {
+    padding: 1rem 0;
+    background: #2d2e32;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* About Section Styles */
+.about-container {
+    padding: 8rem 0 4rem;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.about-info {
+    flex: 1;
+}
+
+.about-info h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #1c0d34;
+}
+
+.about-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #1c0d34;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-self: flex-end
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .about-info h1 {
+        font-size: 2.5rem;
+    }
+
+
+    
+}
+
+@media (max-width: 450px) {
+    .about-info h1 {
+        font-size: 2rem;
+    }
+    
+    .about-info h2 {
+        font-size: 5rem;
     }
 }
