@@ -298,3 +298,90 @@ header {
         font-size: 5rem;
     }
 }
+
+/* updated profiles sections */
+
+.coding-profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between each profile link */
+    padding: 20px 0;
+}
+
+.coding-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+    min-width: 180px; /* Ensures uniform width */
+    text-align: center;
+}
+
+/* LeetCode (Orange-Yellow) */
+.leetcode {
+    background: #f89f1b;
+}
+
+.leetcode:hover {
+    background: #e07b00;
+    transform: scale(1.05);
+}
+
+/* GeeksforGeeks (Green) */
+.gfg {
+    background: #2f8d46;
+}
+
+.gfg:hover {
+    background: #256f38;
+    transform: scale(1.05);
+}
+
+/* GitHub (Black) */
+.github {
+    background: #333;
+}
+
+.github:hover {
+    background: #222;
+    transform: scale(1.05);
+}
+
+/* LinkedIn (Blue) */
+.linkedin {
+    background: #0077b5;
+}
+
+.linkedin:hover {
+    background: #005f91;
+    transform: scale(1.05);
+}
+
+/* Twitter (Sky Blue) */
+.twitter {
+    background: #1da1f2;
+}
+
+.twitter:hover {
+    background: #0d8bf0;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coding-profiles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .coding-link {
+        width: 80%; /* Full-width on smaller screens */
+    }
+}
+
