@@ -35,3 +35,5 @@ document.querySelectorAll('.section').forEach((section) => {
     section.style.transition = 'all 0.6s ease-out';
     observer.observe(section);
 });
+
+
